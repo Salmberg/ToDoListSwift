@@ -14,6 +14,14 @@
 		CB9C77D929E945CE0039BE7B /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9C77D829E945CE0039BE7B /* ToDoListTests.swift */; };
 		CB9C77E329E945CE0039BE7B /* ToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9C77E229E945CE0039BE7B /* ToDoListUITests.swift */; };
 		CB9C77E529E945CE0039BE7B /* ToDoListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9C77E429E945CE0039BE7B /* ToDoListUITestsLaunchTests.swift */; };
+		CB9C77F429E947010039BE7B /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9C77F329E947010039BE7B /* TasksView.swift */; };
+		CB9C77F729E94D040039BE7B /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9C77F629E94D040039BE7B /* TaskRow.swift */; };
+		CB9C77F929E94E470039BE7B /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9C77F829E94E470039BE7B /* AddTaskView.swift */; };
+		CB9C77FB29E951090039BE7B /* SmallAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9C77FA29E951090039BE7B /* SmallAddButton.swift */; };
+		CB9C77FE29E954CF0039BE7B /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = CB9C77FD29E954CF0039BE7B /* Realm */; };
+		CB9C780029E954CF0039BE7B /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CB9C77FF29E954CF0039BE7B /* RealmSwift */; };
+		CB9C780229E954FC0039BE7B /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9C780129E954FC0039BE7B /* RealmManager.swift */; };
+		CB9C780429E956A10039BE7B /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9C780329E956A10039BE7B /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,12 @@
 		CB9C77DE29E945CE0039BE7B /* ToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9C77E229E945CE0039BE7B /* ToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITests.swift; sourceTree = "<group>"; };
 		CB9C77E429E945CE0039BE7B /* ToDoListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CB9C77F329E947010039BE7B /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
+		CB9C77F629E94D040039BE7B /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
+		CB9C77F829E94E470039BE7B /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		CB9C77FA29E951090039BE7B /* SmallAddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallAddButton.swift; sourceTree = "<group>"; };
+		CB9C780129E954FC0039BE7B /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		CB9C780329E956A10039BE7B /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9C780029E954CF0039BE7B /* RealmSwift in Frameworks */,
+				CB9C77FE29E954CF0039BE7B /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,10 +110,13 @@
 		CB9C77C629E945CD0039BE7B /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				CB9C77F529E94CF00039BE7B /* Components */,
+				CB9C77F229E946EA0039BE7B /* Views */,
 				CB9C77C729E945CD0039BE7B /* ToDoListApp.swift */,
-				CB9C77C929E945CD0039BE7B /* ContentView.swift */,
 				CB9C77CB29E945CE0039BE7B /* Assets.xcassets */,
 				CB9C77CD29E945CE0039BE7B /* Preview Content */,
+				CB9C780129E954FC0039BE7B /* RealmManager.swift */,
+				CB9C780329E956A10039BE7B /* Task.swift */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -127,6 +146,25 @@
 			path = ToDoListUITests;
 			sourceTree = "<group>";
 		};
+		CB9C77F229E946EA0039BE7B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB9C77C929E945CD0039BE7B /* ContentView.swift */,
+				CB9C77F329E947010039BE7B /* TasksView.swift */,
+				CB9C77F829E94E470039BE7B /* AddTaskView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CB9C77F529E94CF00039BE7B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CB9C77F629E94D040039BE7B /* TaskRow.swift */,
+				CB9C77FA29E951090039BE7B /* SmallAddButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +181,10 @@
 			dependencies = (
 			);
 			name = ToDoList;
+			packageProductDependencies = (
+				CB9C77FD29E954CF0039BE7B /* Realm */,
+				CB9C77FF29E954CF0039BE7B /* RealmSwift */,
+			);
 			productName = ToDoList;
 			productReference = CB9C77C429E945CD0039BE7B /* ToDoList.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +257,9 @@
 				Base,
 			);
 			mainGroup = CB9C77BB29E945CD0039BE7B;
+			packageReferences = (
+				CB9C77FC29E954CF0039BE7B /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = CB9C77C529E945CD0039BE7B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +302,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9C780429E956A10039BE7B /* Task.swift in Sources */,
 				CB9C77CA29E945CD0039BE7B /* ContentView.swift in Sources */,
+				CB9C77F929E94E470039BE7B /* AddTaskView.swift in Sources */,
+				CB9C77F429E947010039BE7B /* TasksView.swift in Sources */,
+				CB9C77FB29E951090039BE7B /* SmallAddButton.swift in Sources */,
 				CB9C77C829E945CD0039BE7B /* ToDoListApp.swift in Sources */,
+				CB9C780229E954FC0039BE7B /* RealmManager.swift in Sources */,
+				CB9C77F729E94D040039BE7B /* TaskRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +634,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB9C77FC29E954CF0039BE7B /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB9C77FD29E954CF0039BE7B /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB9C77FC29E954CF0039BE7B /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		CB9C77FF29E954CF0039BE7B /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB9C77FC29E954CF0039BE7B /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CB9C77BC29E945CD0039BE7B /* Project object */;
 }
